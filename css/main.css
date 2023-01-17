@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    --gray-font-header: #f2f3f4;
+    --gray-blue-text: #85929E;
+    --blue-steel: #85929e;
+    --lg: 24px;
+    --md: 16px;
+    --sm: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #85929E;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+    .icons a{
+        margin-left: 4px;
+        width: 20px;
+        height: 20px; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .icons a:nth-child(1){
+       background-image: url(../assets/whatsapp.png);
+    }
+    .icons a:nth-child(2){
+        background-image: url(../assets/twitter.png); 
+     }
+     .icons a:nth-child(3){
+        background-image: url(../assets/instagram.png);
+     }
+     .icons a:nth-child(4){
+        background-image: url(../assets/facebook.png); 
+     }
+     .icons a:nth-child(5){
+        background-image: url(../assets/youtube.png);
+     }
+
+/*HEADER SECTION-------------------------------------------------------------------------*/
+header{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+    header .header-icons-container{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--gray-font-header);
+    }
+        header .header-icons-container .icons{
+            width: 300px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 10px;
+        }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    nav .nav-logo-container{
+        display: flex;
+        justify-content: center;
+    }
+        nav .nav-logo-container img{
+            margin-top: 4px;
+            width: 70%;       
+        }
+    nav .profile-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        nav .profile-link a{
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--gray-blue-text);
+            text-decoration: none;
+            padding-left: 10px;
+            border-left: 1px solid var(--gray-blue-text); 
+            margin: 0 auto;
+        }
+
+/*MAIN SECTION--------------------------------------*/
+.main-container{
+    width: 320px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+main main.container h3{
+    font-weight: 400;
+}
+main .main-container p{
+    font-size: var(--sm);
+    font-weight: 300;
+    text-align: justify;
+}
+main .code-image{
+    display: flex;
+    width: 320px;
+    height: 300px;
+    background-image: url(../assets/pexels-fauxels-3183165.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+main .code-image a{
+    width: 180px;
+    height: 40px;
+    margin: auto auto;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--blue-steel);
+    color: whitesmoke;
+    font-size: var(--md);
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+    box-shadow: 2px 2px 20px 2px black;
+}
+
+main .code-image a:hover{
+    background-color: var(--gray-font-header);
+    transition: background-color .5s;
+    color: var(--gray-blue-text);
+}
+
+/*FOOTER SECCTION-------------------------------------------------------------*/
+footer{
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container{
+    display: grid;
+    margin: 0 10px;
+    margin-top: 30px;
+    padding-top: 10px;
+    grid-template-columns: 2fr 3fr;
+    border-top: 1px solid gainsboro;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(4, 15px);
+    gap: 2px;
+}
+.info-container img{
+    width: 12px;
+    height: 12px;
+    align-items: center;
+    justify-items: center;
+    object-fit: cover;
+}
+.info-container p{
+    margin: 0;
+    font-size: 10px;
+}
+.logo-container{
+    display: grid;
+    align-items: center;
+    justify-items:end;
+}
+.logo-container img{
+    width: 150px;
+    height: auto;
+}
+
