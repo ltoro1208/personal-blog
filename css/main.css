@@ -194,8 +194,6 @@ footer{
         main .code-image{
             width: 50%;
         }
-
-
     .footer-container{
         grid-template-columns: 1fr 1fr;
     }
